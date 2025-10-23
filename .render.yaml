@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: telegram-bot
+    env: python
+    plan: free
+    buildCommand: |
+      pyenv install -s 3.10.14
+      pyenv global 3.10.14
+      pip install --upgrade pip
+      pip install -r requirements.txt
+    startCommand: python bot.py
