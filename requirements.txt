@@ -1,5 +1,5 @@
-cat > requirements.txt <<'EOF'
 python-telegram-bot==20.5
 python-dotenv==1.0.1
 APScheduler==3.10.4
 EOF
+
