@@ -1,4 +1,5 @@
-
+import telegram
+assert telegram.__version__.startswith("21."), f"Wrong PTB version: {telegram.__version__}"
 import os
 import logging
 from datetime import datetime
@@ -135,4 +136,5 @@ def main():
     app.run_polling()
 
 if __name__ == "__main__":
+
     main()
